@@ -9,7 +9,6 @@ def home():
 
 @app.route('/search', methods=['GET', 'POST'])
 def search():
-    error = None
     if request.method == 'GET':
         procedure =  request.args.get('procedure')
         zip_code = request.args.get('zip')
